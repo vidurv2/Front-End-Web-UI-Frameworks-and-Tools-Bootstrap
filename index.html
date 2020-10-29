@@ -2,21 +2,34 @@
 <html lang="en">
 
 <head>
+    <!-- Required meta tags always come first -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Ristorante Con Fusion</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-dark navbar-expand-sm bg-primary fixed-top" >
+
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top" >
         <div class="container">
-            <a class="navbar-brand" href="#"> Ristorante Con Fusion</a>
-
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target='#Navbar'>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mr-auto" href="#"> Ristorante Con Fusion</a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./aboutus.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
         </div>
-
     </nav>
 
     <header class="jumbotron">
@@ -34,10 +47,10 @@
 
     <div class="container">
         <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 order-sm-first col-md-3">
+            <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
-            <div class="col col-sm order-sm-last col-md">
+            <div class="col col-sm order-sm-first col-md">
                 <h2>Uthappizza</h2>
                 <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
             </div>
@@ -55,10 +68,10 @@
         </div>
 
         <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 order-sm-first col-md-3">
+            <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Meet our Culinary Specialists</h3>
             </div>
-            <div class="col col-sm order-sm-last col-md">
+            <div class="col col-sm order-sm-first col-md">
                 <h2>Alberto Somayya</h2>
                 <h4>Executive Chef</h4>
                 <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
@@ -73,7 +86,7 @@
                     <h5>Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="./aboutus.html">About</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
@@ -107,6 +120,10 @@
            </div>
         </div>
     </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </body>
 
